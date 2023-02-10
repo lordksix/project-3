@@ -4,10 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+    <style>
+        @media screen and (min-width: 480px) 
+    {
+        body
+        {
+            background-color: blue;
+        }
+    }
+
+    @media screen and (max-width: 480px) 
+    {
+        #h1
+        {
+            font-size: 1.8em;
+        }
+    }
+
+    #projects
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav
+    {
+        position: fixed;
+        top: 0px;
+    }
+    </style>
 </head>
 <body>
+   <div id="welcome-section" width="100%" heigth="100%">
+    <h1>Welcome to my personal portfolio</h1>
+    </div> 
+    <section id="projects" >
+        <div class="project-tile">
+            <a href="www.google.com" >
+                <h2>My firts Project</h2>
+                <img src="www.google.com/img" alt="my first project">
+            </a>
+            </div>
+
+            <div class="project-tile">
+                <a href="www.google.com" >
+                    <h2>My firts Project</h2>
+                    <img src="www.google.com/img" alt="my first project">
+                </a>
+            </div>
+    </section>
+    
+    <nav id="navbar">
+        <a href="#myProjects">My projects</a>
+        <a href="#myBiography">My Biography</a>
+        <a href="#contactMe">Contact me</a>
+    </nav>
+
+    <a href="https://wwww.github.com/Edcaly" id="profile-link" target="_blank">Viste me on Github</a>
     <footer>
         <p>
           ** New prototype of a portafolio of of microverse projects
