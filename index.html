@@ -8,63 +8,48 @@
     <title>Document</title>
 </head>
 
-    <style>
-        @media screen and (min-width: 480px) 
-    {
-        body
-        {
-            background-color: blue;
-        }
-    }
-
-    @media screen and (max-width: 480px) 
-    {
-        #h1
-        {
-            font-size: 1.8em;
-        }
-    }
-
-    #projects
-    {
-        display: flex;
-        flex-direction: column;
-    }
-
-    nav
-    {
-        position: fixed;
-        top: 0px;
-    }
-    </style>
 </head>
 <body>
+    <nav id="navbar" class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="#welcome-section">About</a>
+          </li>
+          <li>
+            <a href="#projects">Work</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
    <div id="welcome-section" width="100%" heigth="100%">
     <h1>Welcome to my personal portfolio</h1>
     </div> 
     <section id="projects" >
+        <div class="projects-grid">
         <div class="project-tile">
-            <a href="www.google.com" >
-                <h2>My firts Project</h2>
-                <img src="www.google.com/img" alt="my first project">
+            <a href="https://en.wikipedia.org/wiki/Website" >
+                <h2>My first Project</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/United_States_Antarctic_Program_website_from_2018_02_22.png" alt="my first project">
             </a>
             </div>
 
             <div class="project-tile">
-                <a href="www.google.com" >
-                    <h2>My firts Project</h2>
-                    <img src="www.google.com/img" alt="my first project">
+                <a href="https://en.wikipedia.org/wiki/Website" >
+                    <h2>My second Project</h2>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/United_States_Antarctic_Program_website_from_2018_02_22.png" alt="my second project">
                 </a>
             </div>
+        </div>
     </section>
     
-    <nav id="navbar">
-        <a href="#myProjects">My projects</a>
-        <a href="#myBiography">My Biography</a>
-        <a href="#contactMe">Contact me</a>
-    </nav>
+<div id="contact">
+    <a href="https://wwww.github.com/Edcaly" id="profile-link" target="_blank">Visit me on Github</a>
 
-    <a href="https://wwww.github.com/Edcaly" id="profile-link" target="_blank">Viste me on Github</a>
+</div>
+
+    
     <footer>
         <p>
           ** New prototype of a portafolio of of microverse projects
